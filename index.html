@@ -20,7 +20,7 @@
           var pronounsData = google.visualization.arrayToDataTable([
         ['Pronouns', 'Count'],
         
-        ['she/her', 4],
+        ['she/her', 5],
         
         ['he/him they/them', 1],
         
@@ -46,7 +46,7 @@ pronounsChart.draw(pronounsData, pronounsOptions);var regionData = google.visual
         
         ['Germany', 4],
         
-        ['US West Coast', 7],
+        ['US West Coast', 9],
         
         ['Finland', 1],
         
@@ -72,11 +72,9 @@ pronounsChart.draw(pronounsData, pronounsOptions);var regionData = google.visual
         
         ['Europe', 1],
         
-        ['US West Coast (SF Bay Area)', 1],
-        
         ['India/Asia', 1],
         
-        ['United States', 1],
+        ['United Kingdom', 1],
         
 
 ]);
@@ -88,7 +86,7 @@ var regionOptions = {
 var regionChart = new google.visualization.PieChart(document.getElementById('region'));
 
 regionChart.draw(regionData, regionOptions);var timezoneData = google.visualization.arrayToDataTable([
-        ['Timezone', 'Count'],
+        ['Timezone', 'Number of sign ups'],
         
         ['UTC-8', 5],
         
@@ -100,7 +98,7 @@ regionChart.draw(regionData, regionOptions);var timezoneData = google.visualizat
         
         ['UTC-4', 1],
         
-        ['UTC', 2],
+        ['UTC', 3],
         
         ['UTC+1', 6],
         
@@ -137,8 +135,48 @@ timezoneChart.draw(timezoneData, timezoneOptions);
                 <main>
                     <div class="container-fluid">
                         <h1 class="mt-4">Sign Up Data</h1>
-
-
+                        <small class="text-muted">Generated on: 2021-03-03T11:58:34.260102</small>
+                        <div class="row">
+                            <div class="card-mb-4">
+                                <div class="card-body">
+                                    <p>For information, please visit <a href="https://us.pycon.org/2021/summits/language/">https://us.pycon.org/2021/summits/language/</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-primary text-white mb-4">
+                                    <div class="card-body"><h1>32</h1></div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <div class="small text-white">Number of sign ups</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-warning text-white mb-4">
+                                    <div class="card-body"><h1>3</h1></div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <div class="small text-white">Number of topics proposed</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-danger text-white mb-4">
+                                    <div class="card-body"><h1>12</h1></div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <div class="small text-white">Number of timezones</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-success text-white mb-4">
+                                    <div class="card-body"><h1>18</h1></div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <div class="small text-white">Number of regions</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
                                 <div class="col-xl-6">
                                     <div class="card mb-4">
@@ -182,7 +220,7 @@ timezoneChart.draw(timezoneData, timezoneOptions);
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Mariatta 2021 | Generated on: 2021-03-02T21:29:46.978039</div>
+                            <div class="text-muted">Copyright &copy; <a href="https://twitter.com/mariatta">Mariatta</a> 2021</div>
                         </div>
                     </div>
                 </footer>

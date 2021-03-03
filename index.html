@@ -1,0 +1,136 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+          var pronounsData = google.visualization.arrayToDataTable([
+        ['Pronouns', 'Count'],
+        
+        ['she/her', 4],
+        
+        ['he/him they/them', 1],
+        
+        ['he/him', 25],
+        
+        ['any', 1],
+        
+
+]);
+
+var pronounsOptions = {
+  title: 'Pronouns'
+};
+
+var pronounsChart = new google.visualization.PieChart(document.getElementById('pronouns'));
+
+pronounsChart.draw(pronounsData, pronounsOptions);var regionData = google.visualization.arrayToDataTable([
+        ['Country/Region', 'Count'],
+        
+        ['Canada West Coast', 3],
+        
+        ['Portugal', 1],
+        
+        ['Germany', 4],
+        
+        ['US West Coast', 7],
+        
+        ['Finland', 1],
+        
+        ['Turkey', 1],
+        
+        ['US Central', 1],
+        
+        ['Poland', 1],
+        
+        ['US East', 1],
+        
+        ['UK', 1],
+        
+        ['Australia East Coast', 1],
+        
+        ['South Korea', 1],
+        
+        ['US East Coast', 1],
+        
+        ['Kenya', 1],
+        
+        ['UK, England', 1],
+        
+        ['Europe', 1],
+        
+        ['US West Coast (SF Bay Area)', 1],
+        
+        ['India/Asia', 1],
+        
+        ['United States', 1],
+        
+
+]);
+
+var regionOptions = {
+  title: 'Country/Region'
+};
+
+var regionChart = new google.visualization.PieChart(document.getElementById('region'));
+
+regionChart.draw(regionData, regionOptions);var timezoneData = google.visualization.arrayToDataTable([
+        ['Timezone', 'Count'],
+        
+        ['UTC-8', 5],
+        
+        ['UTC-7', 6],
+        
+        ['UTC-6', 1],
+        
+        ['UTC-5', 2],
+        
+        ['UTC-4', 1],
+        
+        ['UTC', 2],
+        
+        ['UTC+1', 6],
+        
+        ['UTC+2', 3],
+        
+        ['UTC+3', 2],
+        
+        ['UTC+5.30', 1],
+        
+        ['UTC+9', 1],
+        
+        ['UTC+10', 1],
+        
+
+]);
+
+        var timezoneOptions = {
+          title: 'Timezones',
+          legend: { position: 'right' },
+        };
+
+var timezoneChart = new google.visualization.BarChart(document.getElementById('timezone'));
+timezoneChart.draw(timezoneData, timezoneOptions);
+      }
+    </script>
+  </head>
+  <body>
+  <h1>2021 Python Language Summit Sign up Data</h1>
+  <div>
+        Data collected by <a href="https://github.com/Mariatta">Mariatta</a>.
+        Charts are generated using <a href="https://developers.google.com/chart">Google Charts</a>.
+      </div>
+  <div><iframe src="https://github.com/sponsors/Mariatta/card" title="Sponsor Mariatta" height="225" width="600" style="border: 0;"></iframe></div>
+    
+        <div id="pronouns" style="width: 900px; height: 500px;"></div>
+    
+        <div id="region" style="width: 900px; height: 500px;"></div>
+    
+        <div id="timezone" style="width: 900px; height: 500px;"></div>
+    
+  </body>
+  <footer>License: CC-BY-SA 4.0 | Generated on: 2021-03-02T20:10:49.047974</footer>
+</html>

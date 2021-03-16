@@ -20,13 +20,21 @@
           var pronounsData = google.visualization.arrayToDataTable([
         ['Pronouns', 'Count'],
         
-        ['she/her', 7],
+        ['she/her', 8],
         
         ['he/him they/them', 2],
         
-        ['he/him', 34],
+        ['he/him', 45],
         
         ['any', 1],
+        
+        ['He', 2],
+        
+        ['Mr', 1],
+        
+        ['he', 1],
+        
+        ['Mr.', 1],
         
 
 ]);
@@ -46,7 +54,7 @@ pronounsChart.draw(pronounsData, pronounsOptions);var regionData = google.visual
         
         ['Germany', 4],
         
-        ['US West Coast', 11],
+        ['US West Coast', 12],
         
         ['Finland', 1],
         
@@ -58,29 +66,39 @@ pronounsChart.draw(pronounsData, pronounsOptions);var regionData = google.visual
         
         ['US East', 1],
         
-        ['United Kingdom', 6],
+        ['United Kingdom', 8],
         
         ['Australia East Coast', 1],
         
         ['South Korea', 1],
         
-        ['US East Coast', 3],
+        ['US East Coast', 4],
         
-        ['(not disclosed)', 1],
+        ['(not disclosed)', 2],
         
         ['Kenya', 1],
         
         ['Europe', 2],
         
-        ['India/Asia', 1],
-        
-        ['UK', 1],
+        ['India', 7],
         
         ['Atlantic Canada', 1],
         
         ['US Great Plains', 1],
         
         ['Greece', 1],
+        
+        ['France', 1],
+        
+        ['Germany ', 1],
+        
+        ['New Zealand', 1],
+        
+        ['Indonesia', 1],
+        
+        ['Japan', 1],
+        
+        ['Brazil', 1],
         
 
 ]);
@@ -94,7 +112,7 @@ var regionChart = new google.visualization.PieChart(document.getElementById('reg
 regionChart.draw(regionData, regionOptions);var timezoneData = google.visualization.arrayToDataTable([
         ['Timezone', 'Number of sign ups'],
         
-        ['UTC-8', 7],
+        ['UTC-8', 8],
         
         ['UTC-7', 7],
         
@@ -102,21 +120,25 @@ regionChart.draw(regionData, regionOptions);var timezoneData = google.visualizat
         
         ['UTC-5', 3],
         
-        ['UTC-4', 3],
+        ['UTC-4', 4],
         
-        ['UTC', 6],
+        ['UTC', 9],
         
-        ['UTC+1', 8],
+        ['UTC+1', 9],
         
-        ['UTC+2', 3],
+        ['UTC+2', 4],
         
         ['UTC+3', 3],
         
         ['UTC+5.30', 1],
         
-        ['UTC+9', 1],
+        ['UTC+8', 1],
+        
+        ['UTC+9', 3],
         
         ['UTC+10', 1],
+        
+        ['UTC+12', 1],
         
 
 ]);
@@ -141,7 +163,7 @@ timezoneChart.draw(timezoneData, timezoneOptions);
                 <main>
                     <div class="container-fluid">
                         <h1 class="mt-4">Sign Up Data</h1>
-                        <small class="text-muted">Generated on: 2021-03-11T14:02:34.314766</small>
+                        <small class="text-muted">Generated on: 2021-03-16T13:45:33.760119</small>
                         <div class="row">
                             <div class="card-mb-4">
                                 <div class="card-body">
@@ -152,7 +174,7 @@ timezoneChart.draw(timezoneData, timezoneOptions);
                         <div class="row">
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-primary text-white mb-4">
-                                    <div class="card-body"><h1>44</h1></div>
+                                    <div class="card-body"><h1>61</h1></div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <div class="small text-white">Number of sign ups</div>
                                     </div>
@@ -160,7 +182,7 @@ timezoneChart.draw(timezoneData, timezoneOptions);
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-warning text-white mb-4">
-                                    <div class="card-body"><h1>4</h1></div>
+                                    <div class="card-body"><h1>9</h1></div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <div class="small text-white">Number of topics proposed</div>
                                     </div>
@@ -168,7 +190,7 @@ timezoneChart.draw(timezoneData, timezoneOptions);
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-danger text-white mb-4">
-                                    <div class="card-body"><h1>12</h1></div>
+                                    <div class="card-body"><h1>14</h1></div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <div class="small text-white">Number of timezones</div>
                                     </div>
@@ -176,7 +198,7 @@ timezoneChart.draw(timezoneData, timezoneOptions);
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <div class="card bg-success text-white mb-4">
-                                    <div class="card-body"><h1>21</h1></div>
+                                    <div class="card-body"><h1>26</h1></div>
                                     <div class="card-footer d-flex align-items-center justify-content-between">
                                         <div class="small text-white">Number of regions</div>
                                     </div>
